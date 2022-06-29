@@ -14,17 +14,16 @@ public class Main {
         boolean ok=false;
         int ab[]=new int[amount];
         Scanner scan = new Scanner(System.in);
-        for(int i=0;i<ab.length && !ok;i++){
+        for(int i=0;i<ab.length && !ok;ok=(i==ab.length)){
             System.out.print("Enter a valid Integer value : ");
             if(scan.hasNextInt()){
                 ab[i] = scan.nextInt();
+                i++;
             }else{
                 scan.nextLine();
                 System.out.println("Enter a valid Integer value");
             }
-            if(i==(ab.length-1)){
-                ok=true;
-            }
+
         }
         return ab;
     }

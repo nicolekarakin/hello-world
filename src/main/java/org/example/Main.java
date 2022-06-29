@@ -8,7 +8,7 @@ public class Main {
         int[] ab=input(2);
         System.out.println(summ( ab[0], ab[1]));
         System.out.println(printSumm( ab[0], ab[1]));
-        System.out.println(greaterThan(ab[0]));
+        System.out.println(greaterThan100(ab[0]));
     }
     public static int[] input(int amount){
         boolean ok=false;
@@ -29,7 +29,7 @@ public class Main {
         return ab;
     }
 
-    public static boolean greaterThan(int a){
+    public static boolean greaterThan100(int a){
         return a>100;
     }
     public static int summ(int a, int b){
